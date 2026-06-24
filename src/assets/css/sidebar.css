@@ -1,0 +1,134 @@
+.app-sidebar {
+    z-index: 9;
+    width: 270px;
+    height: 100svh;
+    padding: 24px 24px 16px ;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidebar-nav {padding: 0; margin: 0px;list-style-type: none;}
+.sidebar-nav li{ padding: 0px; margin-bottom: 1px;}
+.sidebar-nav .sidebar-link {
+    color: var(--secondary-800);
+    align-items: center;
+    gap: 7px;
+    padding: 12px 16px;
+    display: flex;
+    font-size: 16px;
+    border-radius: 99px;
+    width: auto;
+    font-weight: 600;
+    line-height: 24px;
+}
+.sidebar-nav .sidebar-link:hover{ color: var(--primary2-500);}
+.sidebar-nav li.active .sidebar-link{ 
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.64) 0%, rgba(255, 255, 255, 0.32) 100%);
+    color: var(--primary2-600);
+}
+.sidebar-nav .icon{ flex: 0 0 auto; width: 24px;}
+
+
+
+/***************new css*************/
+
+
+.sidebar-link-text {
+    white-space: nowrap;
+}
+
+.logo-box {
+    position: relative;
+}
+
+.logo-box .big-logo {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease;    
+    margin: 0 auto 40px;
+    text-align: center;
+    display: block;
+}
+
+.log-out  .sidebar-link {
+    color: var(--error-600);
+}
+
+
+/*******full page hide only side menu********/
+
+
+
+
+
+@media only screen and (min-width: 1200px){
+
+    body.hide-sidebar-layout .logo {
+        display: none !important;
+    }
+
+    body.hide-sidebar-layout .content-wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    body.hide-sidebar-layout .app-sidebar {
+        display: none;
+    }
+
+   body.hide-sidebar-layout .page-title {
+        left: 24px;
+    }
+
+    body.hide-sidebar-layout  .header-dashboard .flex-grow-1 {
+        padding: 11px 24px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1199px){
+
+    body.menu-open .app-sidebar {visibility: visible;transform: none;}
+
+    .app-sidebar {
+        visibility: hidden;
+        transition: transform .3s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        top: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        padding: 15px;
+        height: 100%;
+        background: #c8d9cb;
+    }
+
+    .app-sidebar.admin-sidebar .logo-box .big-logo img {
+        width: 100%;
+        max-width: 190px;
+    }
+
+    .app-sidebar .logo-box .big-logo img {
+        max-width: 209px;
+        padding: 0 17px 15px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+    .app-sidebar.admin-sidebar .logo-box .big-logo img {
+        max-width: 155px;
+    }
+
+}

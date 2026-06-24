@@ -1,0 +1,53 @@
+.border-top {
+    border-top: 1px solid var(--secondary-100) !important;
+}
+
+.border-radius-remove td {
+    border-radius: 0 !important;
+    text-align: left !important;
+}
+
+.list-new-dot li {
+    position: relative;
+    padding-left: 22px;
+    padding-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+}
+
+.list-new-dot li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: var(--primary2-600);
+    border-radius: 100px;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+
+    .tabs-default-box ul.nav-tabs button {
+        font-size: 16px;
+        padding: 10px 13px;
+    }
+
+    .scrollBar .nav-tabs-scroll {overflow-x: auto;}
+
+    .scrollBar .nav-tabs-scroll ul.nav.nav-tabs {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .font-16 p {
+        font-size: 14px;
+    }
+
+
+}

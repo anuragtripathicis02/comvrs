@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Bilmond';
+    src: url('../fontFamily/Bilmond-Bold.eot');
+    src: url('../fontFamily/Bilmond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-Bold.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-Bold.woff') format('woff'),
+        url('../fontFamily/Bilmond-Bold.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-Bold.svg#Bilmond-Bold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bilmond';
+    src: url('../fontFamily/Bilmond-Black.eot');
+    src: url('../fontFamily/Bilmond-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-Black.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-Black.woff') format('woff'),
+        url('../fontFamily/Bilmond-Black.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-Black.svg#Bilmond-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bilmond ';
+    src: url('../fontFamily/Bilmond-Medium.eot');
+    src: url('../fontFamily/Bilmond-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-Medium.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-Medium.woff') format('woff'),
+        url('../fontFamily/Bilmond-Medium.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-Medium.svg#Bilmond-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bilmond';
+    src: url('../fontFamily/Bilmond-Regular.eot');
+    src: url('../fontFamily/Bilmond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-Regular.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-Regular.woff') format('woff'),
+        url('../fontFamily/Bilmond-Regular.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-Regular.svg#Bilmond-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bilmond';
+    src: url('../fontFamily/Bilmond-SemiBold.eot');
+    src: url('../fontFamily/Bilmond-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-SemiBold.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-SemiBold.woff') format('woff'),
+        url('../fontFamily/Bilmond-SemiBold.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-SemiBold.svg#Bilmond-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bilmond';
+    src: url('../fontFamily/Bilmond-Thin.eot');
+    src: url('../fontFamily/Bilmond-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fontFamily/Bilmond-Thin.woff2') format('woff2'),
+        url('../fontFamily/Bilmond-Thin.woff') format('woff'),
+        url('../fontFamily/Bilmond-Thin.ttf') format('truetype'),
+        url('../fontFamily/Bilmond-Thin.svg#Bilmond-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --Bilmond : 'Bilmond' ;
+}

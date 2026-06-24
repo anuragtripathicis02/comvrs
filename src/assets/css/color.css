@@ -1,0 +1,95 @@
+:root {
+    --primary-50 : #e9ebf3;
+    --primary-100 : #b9c2db;
+    ---primary-200 : #98a4c9;
+    --primary-300 : #687bb1;
+    --primary-400 : #4b61a1;
+    --primary-500 : #1e3a8a;
+    --primary-600 : #1b357e;
+    --primary-700 : #152962;
+    --primary-800 : #11204c;
+    --primary-900 : #0d183a;
+
+    --secondary-50 : #f0f1f3;
+    --secondary-100 : #cfd4db;
+    --secondary-200 : #b8bfca;
+    --secondary-300 : #97a2b1;
+    --secondary-400 : #8390a2;
+    --secondary-500 : #64748b;
+    --secondary-600 : #5b6a7e;
+    --secondary-700 : #475263;
+    --secondary-800 : #37404c;
+    --secondary-900 : #2a313a;
+
+    --success-50 : #e7f8f2;
+    --success-100 : #b5e9d8;
+    --success-200 : #91dfc5;
+    --success-300 : #5fd0ab;
+    --success-400 : #40c79a;
+    --success-500 : #10b981;
+    --success-600 : #0fa875;
+    --success-700 : #0b835c;
+    --success-800 : #096647;
+    --success-900 : #074e36;
+
+    --error-50 : #fdecec;
+    --error-100 : #fac5c5;
+    --error-200 : #f8a9a9;
+    --error-300 : #f48282;
+    --error-400 : #f26969;
+    --error-500 : #ef4444;
+    --error-600 : #d93e3e;
+    --error-700 : #aa3030;
+    --error-800 : #832525;
+    --error-900 : #641d1d;
+
+    --warning-50 : #fef5e7;
+    --warning-100 : #fce1b3;
+    --warning-200 : #fad28f;
+    --warning-300 : #f8be5c;
+    --warning-400 : #f7b13c;
+    --warning-500 : #f59e0b;
+    --warning-600 : #df900a;
+    --warning-700 : #ae7008;
+    --warning-800 : #875706;
+    --warning-900 : #674205;
+
+    --info-50 : #ebf3fe;
+    --info-100 : #c2d8fc;
+    --info-200 : #a5c6fb;
+    --info-300 : #7cabf9;
+    --info-400 : #629bf8;
+    --info-500 : #3b82f6;
+    --info-600 : #3676e0;
+    --info-700 : #2a5caf;
+    --info-800 : #204887;
+    --info-900 : #193767;
+
+    --gray-1 : #ffffff;
+    --gray-2 : #fdfdfd;
+    --gray-3 : #f6f6f6;
+    --gray-4 : #f1f1f1;
+    --gray-5 : #dbdcdd;
+    --gray-6 : #c4c4c6;
+    --gray-7 : #949598;
+    --gray-8 : #65666a;
+    --gray-9 : #525357;
+    --gray-10 : #36373c;
+    --gray-11 : #2e3035;
+    --gray-12 : #25272b;
+    --gray-13 : #121419;
+
+
+    --primary2-50 : #edf1ee;
+    --primary2-100 : #c7d5c9;
+    --primary2-200 : #acc0af;
+    --primary2-300 : #86a38b;
+    --primary2-400 : #6f9175;
+    --primary2-500 : #4b7652;
+    --primary2-600 : #446b4b;
+    --primary2-700 : #35543a;
+    --primary2-800 : #29412d;
+    --primary2-900 : #203222;
+
+
+}

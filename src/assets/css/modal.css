@@ -1,0 +1,156 @@
+.lg-modal .modal-dialog {
+  max-width: 1100px;
+  padding: 15px;
+}
+
+.md-modal .modal-dialog {
+  max-width: 800px;
+  padding: 15px;
+}
+
+.sm-modal .modal-dialog {
+  max-width: 500px;
+  /* padding: 0 15px; */
+}
+
+.modal-440  .modal-dialog {
+  max-width: 440px;
+}
+
+.common-modal .btn-close-btn {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  background: rgb(255 255 255 / 30%);
+  border-radius: 100px;
+  padding: 9px;
+  color: var(--dark-1);
+  width: 44px;
+  height: 44px;
+}
+.common-modal .btn-close-btn svg {
+  display: block;
+}
+
+button.btn-close-btn:active:focus-visible, button.btn-close-btn:focus-visible, button.btn-close-btn:active  {
+    outline: none !important;
+    box-shadow: none !important;
+    background: rgb(255 255 255 / 30%) !important;
+    color: var(--dark-1) !important;
+}
+
+
+/*********************/
+
+.icons-text-create-new svg {
+    width: 34px;
+    height: 34px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+button.red-btn-border:hover {
+    border-color: var(--error-600) !important;
+    background: transparent !important;
+}
+
+
+.sub-user-created-sec ul {
+    border-radius: 8px;
+    padding: 12px 0 !important;
+}
+
+.sub-user-created-sec ul li {
+    width: 100%;
+    padding: 6px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--secondary-800);
+}
+
+.sub-user-created-sec .text-user {
+    width: calc(50% - 1px);
+}
+
+.sub-user-created-sec ul li .icons {
+    font-weight: 600;
+}
+
+
+.card-box-grey {
+    background: var(--gray-3);
+    border: 1px solid var(--secondary-100);
+    border-radius: 12px;
+    padding: 20px 16px;
+}
+
+.card-box-grey {
+    background: var(--gray-3);
+    border: 1px solid var(--secondary-100);
+    border-radius: 12px;
+    padding: 20px 16px;
+}
+
+.background-transparent .form-control, .background-transparent  .form-select {
+    background: transparent;
+}
+
+.background-transparent.filled-bg label, .background-transparent.calendar-box label {
+    background: var(--gray-3) !important;
+}
+
+
+.background-transparent.calendar-box input {
+    background: var(--gray-3) !important;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+  .common-modal .btn-close-btn {
+    right: 0;
+    top: -50px;
+  }
+}
+
+.common-modal .modal-content {
+  border-radius: 24px;
+}
+
+.common-modal .modal-content .modal-header {
+  background: var(--primary2-50);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--primary2-100);
+}
+
+.common-modal .modal-content .common-modal-body {
+  padding: 24px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .common-modal .modal-content .modal-header {padding: 15px;}
+  .common-modal .modal-content .common-modal-body {
+    padding: 24px 16px;
+  }
+
+  .lg-modal .modal-dialog {
+    padding: 0;
+  }
+
+  .md-modal .modal-dialog {
+    padding: 0;
+  }
+
+
+
+}

@@ -1,0 +1,85 @@
+.white-card {
+    background: var(--gray-1);
+    box-shadow: 0px 1px 4px 0px #0000001A;
+}
+
+.card-box {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.inner-card-box .card-right {
+    width: 22px;
+}
+
+.inner-card-box .card-left {
+    width: calc(100% - 30px);
+}
+
+.inner-card-box  .img-box {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.inner-card-box  .text-box {
+    width: calc(100% - 72px);
+}
+
+.inner-card-box span {
+    color: var(--secondary-500);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0;
+}
+
+.credit-card .icons {
+    top: 12px;
+    right: 12px;
+}
+
+.credit-card .icons img {
+    width: 26px;
+}
+
+.border-card {
+    border: 1px solid var(--secondary-200)
+}
+
+.card-top-box .card-img  {
+    flex: 0 1
+}
+
+.card-top-box .card-img .img-box{
+    width: 40px;
+    height: 40px;
+}
+
+.card-top-box .text-left-box {
+    width: calc(100% - 48px);
+}
+
+.card-top-box .card-text{
+    padding-left: 15px;
+    margin-left: 15px;
+    border-left: 2px solid var(--secondary-100);
+}
+
+.min-h-90 {
+    min-height: 90px;
+}
+
+.min-h-80 {
+    min-height: 80px;
+}
+
+@media only screen and (max-width:767px) {
+    .card-top-box .card-text{
+        padding-left: 0;
+        margin-left: 0;
+        border-left: none;
+        padding-top: 15px;
+    }
+}

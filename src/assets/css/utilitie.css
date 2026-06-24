@@ -1,0 +1,93 @@
+.mt-60 {
+    margin-top: 60px;
+}
+
+.py-32 {
+    padding: 32px 0;
+}
+
+
+.container {
+    padding: 0 25px;
+}
+
+.mx-w-100 {
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.word-wrap {
+    word-wrap: break-word;
+}
+
+
+/**********samll btn multicolor*********/
+
+.btn-small {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.blue-text {
+    color: var(--info-600) !important;
+}
+
+.blue-btn {
+    background: var(--info-50) !important;
+}
+
+.yellow-text {
+    color: var(--warning-700) !important;
+}
+
+.yellow-btn {
+    background: var(--warning-50) !important;
+}
+
+.red-text {
+    color: var(--error-600) !important;
+}
+
+.red-btn {
+    background: var(--error-50) !important;
+}
+
+.red-btn-border {
+    border-color: var(--error-50) !important;
+}
+.green-text {
+    color: var(--primary2-500) !important;
+}
+
+.green-btn {
+    background: var(--primary2-50) !important;
+}
+
+.text-link {
+    color: var(--primary2-500);
+    font-weight: 600;
+    display: contents;
+}
+
+.green-btn-fill {
+    background: var(--primary2-500);
+}
+
+.white-text {
+    color: var(--gray-1);
+}
+
+
+@media only screen and (max-width:1199px) {
+
+    .container {
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+}
