@@ -1,0 +1,116 @@
+.mb-40{ margin-bottom: 40px;}
+.auth-info.d-flex.align-items-center.gap-2 img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.text-simple {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #475263;
+    color: var(--secondary-700);
+}
+.text-grn{ color: var(--primary2-500);}
+
+.theme-btn-light {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    background-color: var(--secondary-50);
+    border-radius: 6px;
+    color: var(--secondary-500);
+    padding: 5px 10px;
+}
+.theme-btn-light svg{ margin-right: 5px;}
+
+.profileImage .profileImage img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex: 0 0 auto;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profileContent h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    color: var(--secondary-900);
+}
+
+.editBtn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+.profileContent p{ font-size: 16px; font-weight: 500; line-height: 140%; color: var(--secondary-600);}
+.profileContent span{ color: #4B7652;}
+
+.profileStats {
+    margin-left: auto;
+}
+
+.profileStats {
+    display: flex;
+    margin-left: auto;
+    gap: 10px;
+}
+
+.profileStats .statBox {
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    background-color: var(--bs-white);
+    padding: 8px 26px 8px 8px;
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 40px 1fr;
+}
+
+.profileStats .statBox h4 {
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.profileStats .statBox span {
+    font-size: 14px;
+    display: block;
+    color: var(--secondary-600);
+}
+
+.profileStats .statBox .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.orange{ background-color: var(--warning-50);}
+.icon.blue{ background-color: var(--info-50);}
+.icon.green{ background-color: var(--success-50);}
+
+.profileCard { margin-bottom: 30px;}
+
+@media only screen and (max-width: 991px){
+.profileInfo { margin-bottom: 30px;}
+}
+
+@media only screen and (max-width: 767px){
+.profileStats {flex-direction: column;}
+}
