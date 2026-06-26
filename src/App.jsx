@@ -15,13 +15,16 @@ import Signup from './pages/authentication/Signup'
 import { useEffect } from 'react'
 import ViewInvoice from './pages/invoiceBilling/viewInvoice/ViewInvoice'
 import ViewDueInvoice from './pages/invoiceBilling/viewDueInvoice/ViewDueInvoice'
+import CompletingProfile from './pages/completingProfile/CompletingProfile'
+import CreatingAnOrder from './pages/creatingAnOrder/CreatingAnOrder'
+import AOS from "aos";
 
 function App() {
   const location = useLocation()
   const hideLayoutRoutes = ['/login', '/sign-up']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
-  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due']
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
   const noContainerRoutes = ['/view-invoice-due'];
@@ -39,6 +42,17 @@ function App() {
     }
   }, [isLoginPage])
 
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 20,
+      easing: "ease-in-out",
+      once: true,
+      mirror: true,
+    });
+  }, []);
+
   return (
     <div className='dashboard-com'>
       {!isLoginPage && <DashboardHeader />}
@@ -52,6 +66,8 @@ function App() {
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
 
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/completing-profile" element={<CompletingProfile />} />
+                <Route path="/creating-an-order" element={<CreatingAnOrder />} />
                 <Route path="/default" element={<Default />} />
                 <Route path="/news-updates" element={<NewsUpdates />} />
                 <Route path="/invoice-billing" element={<InvoiceBilling />} />

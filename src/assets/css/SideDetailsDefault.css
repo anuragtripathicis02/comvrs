@@ -56,6 +56,8 @@ body.layout-open .content-wrapper {
         padding: 20px 12px;
     }
 
-
+    .content-inner-wrapper.custom-layout, .content-inner-wrapper  {
+        padding-top: 60px;
+    }
 
 }

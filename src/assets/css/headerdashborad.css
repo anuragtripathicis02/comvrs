@@ -134,10 +134,21 @@
 @media only screen and (max-width: 991px) {
 
 .page-title {
-    position: static;
-    padding-bottom: 22px;
+    position: fixed;
+    padding-bottom: 12px;
+    top: 60px;
+    width: 100%;
+    left: 20px;
+    background: var(--gray-3);
+    padding-top: 12px;
+    z-index: 3;
 }
-
+.content-inner-wrapper.custom-layout .page-title{
+    background: var(--gray-3);
+}
+.content-inner-wrapper .page-title {
+    background: var(--gray-1);
+}
 
 .logo {
     width: 220px;

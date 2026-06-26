@@ -70,7 +70,7 @@ const visibleOrders = 15;
             {/* form with floting  */}
 
             <FloatingLabel controlId="floatingInput" label={<>Legal Organization Name <span className="text-danger">*</span></>} className="mb-4">
-            <Form.Control type="text" placeholder="name@example.com" />
+                 <Form.Control type="text" placeholder="name@example.com" />
             </FloatingLabel>
 
             <Form.Group className="mb-4 position-relative search-box">
@@ -81,7 +81,7 @@ const visibleOrders = 15;
             </Form.Group>
 
             <FloatingLabel controlId="floatingInput" label="Official Company Email Domain" className="mb-4 filled-box filled-bg">
-            <Form.Control type="text" placeholder="xyz@gmai.com" />
+                <Form.Control type="text" placeholder="xyz@gmai.com" />
             </FloatingLabel>
 
             <FloatingLabel controlId="floatingInput" label={<>Legal Organization Name <span className="text-danger">*</span></>} className="mb-4">
@@ -93,7 +93,7 @@ const visibleOrders = 15;
             </FloatingLabel>
 
             <FloatingLabel controlId="floatingTextarea2" label="Comments" className="mb-4">
-            <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '100px' }} />
+                <Form.Control as="textarea" placeholder="Leave a comment here" style={{ height: '100px' }} />
             </FloatingLabel>
 
             <FloatingLabel controlId="floatingSelect" label="Works with selects">

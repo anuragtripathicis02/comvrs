@@ -134,6 +134,22 @@
 }
 
 
+.card-profile-sec {
+    border: 1px solid var(--warning-100);
+}
+
+
+.empty-box {
+    background: var(--gray-3);
+    padding: 45px 15px;
+    border-radius: 12px;
+}
+
+.empty-box .inner-empty-box {
+    max-width: 350px;
+}
+
+
 @media only screen and (max-width: 1420px) {
 
 
@@ -183,4 +199,13 @@
     .stat-card .heading-text h2 {
         font-size: 20px;
     }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .stat-sec.full-mobile-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
 }

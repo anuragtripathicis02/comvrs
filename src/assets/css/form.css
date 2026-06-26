@@ -15,6 +15,10 @@
     height: auto !important;
 }
 
+.min-h-textarea textarea{
+    min-height: 100px !important;
+}
+
 .form-label {
     padding: 0;
     margin-bottom: 3px;
@@ -1026,6 +1030,24 @@ input:-webkit-autofill {
     color: var(--primary2-500);
 }
 
+.padding-fixed .flag-phone-sec button {
+    padding: 11px;
+}
+
+.upload-box {
+    width: 100%;
+    border: 1px solid var(--secondary-100);
+    border-radius: 4px;
+    padding: 10px 16px;
+    border-style: dashed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 1400px) {
 
