@@ -107,10 +107,7 @@ function App() {
                 
                 
               </Routes>
-                    {/* Auth Pages */}
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/sign-up" element={<Signup />} />
-                  </Routes>
+                    
                 </div>
               </div>
             </div>
