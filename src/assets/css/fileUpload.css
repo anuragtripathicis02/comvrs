@@ -1,0 +1,177 @@
+.uploadWrapper{
+    width:100%;
+}
+
+.fileRow{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 12px 20px;
+    border: 1px solid var(--secondary-50);
+    border-radius: 8px;
+    margin-bottom: 2px;
+    background: var(--gray-1);
+}
+
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    flex:1;
+}
+
+.fileName{font-weight: 400;font-size: 16px;line-height: 140%;letter-spacing: 0;width: 180px;display: inline-block; white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.fileSize{font-weight: 400;font-size: 13px;line-height: 100%;letter-spacing: 0%;text-align: center;padding: 0 20px;color: var(--secondary-600);}
+
+.statusArea{
+    width:260px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.uploadText{
+    color: var(--secondary-600);
+    font-size:15px;
+}
+
+.progress{
+    width:130px;
+    height:5px;
+    background:#E4E4E4;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progressFill{
+    height:100%;
+    background:#18B27C;
+    border-radius:20px;
+}
+
+.date{font-weight: 400;font-size: 13px;line-height: 100%;letter-spacing: 0%;text-align: center;padding: 0 20px;color: var(--secondary-600);}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-left:15px;
+}
+
+.edit{background: transparent;color: var(--secondary-400);}
+
+.delete{
+    color: var(--error-500);
+    background: transparent;
+}
+
+.uploadMore{
+    border: 1px dashed var(--secondary-100);
+    border-radius: 8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    background: var(--secondary-50);
+    padding: 12px 16px;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+    gap: 10px;
+}
+
+.uploadMore:hover{
+    border-color: var(--secondary-800);
+    color: var(--secondary-800);
+}
+
+.fileRow .pdf-icons {
+    background: var(--error-50);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.fileRow svg {
+    display: block;
+}
+
+.doc-icons {
+    background: var(--info-50);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.short-name.placeholder-img {
+    width: 45px;
+    height: 45px;
+    font-size: 34px;
+}
+
+.card-yellow.yellow-btn {
+    margin-top: -9px;
+    box-shadow: 0px 1px 4px 0px #0000001A;
+    border-radius: 0 0 12px 12px;
+    color: var(--primary2-600);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+
+@media only screen and (max-width: 1400px){
+
+    .date, .fileSize {
+        padding: 0 6px;
+    }
+
+    .statusArea {
+        width: 210px;
+    }
+
+    .progress{
+        width:100px;
+    }
+    
+    .fileName {
+        width: 130px;
+    }
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+
+.fileRow {
+    flex-wrap: wrap;
+}
+
+.left {
+    width: calc(100% - 90px);
+}
+
+.actions {
+    gap: 4px;
+    padding-top: 10px;
+}
+
+.statusArea {
+    width: calc(100% - 100px);
+    padding-top: 10px;
+}
+
+}

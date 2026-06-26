@@ -16,7 +16,7 @@ const MyOrdersTable = () => {
     
 
   return (
-    <div className="table-default min-w-1200">
+    <div className="table-default min-w-1000">
         <Table className="text-center table-hover align-middle m-0 p-0" responsive>
             <thead>
                 <tr>
