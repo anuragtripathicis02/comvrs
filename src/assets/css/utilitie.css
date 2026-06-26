@@ -16,6 +16,7 @@
 
 .container {
     padding: 0 25px;
+    max-width: 1350px;
 }
 
 .mx-w-100 {
@@ -89,6 +90,9 @@
     color: var(--gray-1);
 }
 
+.color-secondary-500 {
+    color: var(--secondary-500);
+}
 
 @media only screen and (max-width:1199px) {
 

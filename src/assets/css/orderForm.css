@@ -106,7 +106,7 @@
 }
 
 .tabs-side-bar-sec .content-area .details-section {
-    padding-left: 75px;
+    padding-left: 15px;
 }
 
 .category-card .icons-box svg {
@@ -161,6 +161,9 @@
     background: var(--gray-1);
 }
 
+.service-card-box p {
+    flex:1;
+}
 ul.list-procced li {
     width: calc(50% - 4px);
     background: var(--gray-1);
@@ -213,10 +216,74 @@ ul.list-procced li:has(.form-check-input:checked[type="radio"]) span {
 
 
 
+/*********************/
+
+.order-place-sec {
+    background: var(--dark-2);
+    height: calc(100svh - 120px);
+    position: sticky;
+    top: 33px;
+    min-height: 600px;
+}
+
+.order-place-sec .order-text-box {
+    box-shadow: 4px 4px 16px 0px #00000014;
+    height: 100%;
+    background: var(--gray-1);
+    border-radius: 16px;
+}
+
+.order-place-sec .order-text-box .mid-order {
+    max-width: 520px;
+    padding: 45px;
+}
+
+.fill-btn-grey {
+    background: var(--primary2-50);
+    border-color: var(--primary2-50);
+}
+
+.find-card {
+    border: 1px solid var(--secondary-50);
+    padding: 16px 36px 16px 16px;
+    border-radius: 8px;
+    background: var(--gray-1);
+}
+
+.find-card .icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.find-card p {
+    font-weight: 600;
+}
+
+.find-card span {
+    color: var(--secondary-500);
+}
+
+
+.list-details-card p {
+    width: calc(50% - 20px);
+}
+
+.list-details-card span {
+    width: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 @media only screen and (max-width:1425px){
 
     .tabs-side-bar-sec .content-area .details-section{
         padding-left: 0;
+    }
+
+    .service-card-box p {
+        flex: auto;
     }
 
 }
@@ -227,6 +294,18 @@ ul.list-procced li:has(.form-check-input:checked[type="radio"]) span {
     ul.list-procced li {
         width: 100%;
     }
+
+    .order-place-sec .order-text-box .mid-order {
+        padding: 15px;
+    }
+
+
+    .order-place-sec {
+        height: calc(100svh - 180px);
+        top: 20px;
+    }
+
+
 }
 
 
@@ -270,6 +349,15 @@ ul.list-procced li:has(.form-check-input:checked[type="radio"]) span {
 
 .tabs-side-bar-sec .step-item:first-child {
     padding-left: 0;
+}
+
+.order-place-sec {
+    position: initial;
+    height: max-content;
+}
+
+.order-place-sec .btn-outline {
+    min-width: 200px;
 }
 
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Confirmation = () => {
   return (
@@ -27,7 +28,7 @@ const Confirmation = () => {
             <div className='btn-box w-auto'>
                 <ul className='p-0 m-0 list-unstyled d-flex align-items-center gap-2'>
                     <li>
-                        <button type='button' className='btn-outline fill-btn text-nowrap'>Confirm & Place Order</button>
+                        <Link to="/selecting-request-type" className='btn-outline fill-btn text-nowrap'>Confirm & Place Order</Link>
                     </li>
                 </ul>
             </div>
