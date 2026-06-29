@@ -23,7 +23,6 @@ import AdminLogin from './adminpages/pages/authentication/Login'
 import AdminDashboard from './adminpages/pages/dashboard/AdminDashboard';
 import AdminCustomers from './adminpages/pages/accountscustomers/Customers';
 import AdminCustomersView from './adminpages/pages/customerview/CustomerView';
-import AOS from "aos";
 import SelectingRequestType from './pages/creatingAnOrder/SelectingRequestType'
 import ViewOrder from './pages/creatingAnOrder/ViewOrder'
 import Managers from './pages/managers/Managers'
@@ -97,19 +96,19 @@ function App() {
                     <Route path="/my-account" element={<MyAccount />} />
                     
 
-                {/* Auth Pages */}
-                <Route path="/login" element={<Login />} />
-                <Route path="/sign-up" element={<Signup />} />
+                    {/* Auth Pages */}
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/sign-up" element={<Signup />} />
 
-                {/* Admin Pages */}
-                <Route path="/admin-login" element={<AdminLogin />} />
-                <Route path="/admin-dashboard" element={<AdminDashboard />} />
-                <Route path="/admin-customers" element={<AdminCustomers />} />
-                <Route path="/admin-customer-view" element={<AdminCustomersView />} />
-                
-                
-              </Routes>
+                    {/* Admin Pages */}
+                    <Route path="/admin-login" element={<AdminLogin />} />
+                    <Route path="/admin-dashboard" element={<AdminDashboard />} />
+                    <Route path="/admin-customers" element={<AdminCustomers />} />
+                    <Route path="/admin-customer-view" element={<AdminCustomersView />} />
                     
+                    
+                  </Routes>
+                        
                 </div>
               </div>
             </div>
