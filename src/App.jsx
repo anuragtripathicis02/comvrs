@@ -1,5 +1,6 @@
 import '../src/assets/css/global.css'
 import './App.css'
+import AOS from "aos";
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom'
 import Dashboard from './pages/dashboard/Dashboard'
 import NewsUpdates from './pages/newsUpdates/NewsUpdates'
@@ -17,6 +18,11 @@ import ViewInvoice from './pages/invoiceBilling/viewInvoice/ViewInvoice'
 import ViewDueInvoice from './pages/invoiceBilling/viewDueInvoice/ViewDueInvoice'
 import CompletingProfile from './pages/completingProfile/CompletingProfile'
 import CreatingAnOrder from './pages/creatingAnOrder/CreatingAnOrder'
+
+import AdminLogin from './adminpages/pages/authentication/Login'
+import AdminDashboard from './adminpages/pages/dashboard/AdminDashboard';
+import AdminCustomers from './adminpages/pages/accountscustomers/Customers';
+import AdminCustomersView from './adminpages/pages/customerview/CustomerView';
 import AOS from "aos";
 import SelectingRequestType from './pages/creatingAnOrder/SelectingRequestType'
 import ViewOrder from './pages/creatingAnOrder/ViewOrder'
@@ -24,7 +30,7 @@ import Managers from './pages/managers/Managers'
 
 function App() {
   const location = useLocation()
-  const hideLayoutRoutes = ['/login', '/sign-up']
+  const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
   const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order']
@@ -64,6 +70,8 @@ function App() {
       {!isLoginPage && <DashboardHeader />}
       {!isLoginPage && <SideNavbar />}
 
+
+
       <div className={!isLoginPage ? 'content-wrapper mt-60' : ''}>
         <div className={ !isLoginPage ? `content-inner-wrapper ${hasExtraClass ? 'custom-layout' : ''}`: ''}>
           <div className={!isLoginPage && !isNoContainerPage ? 'container' : ''}>
@@ -89,10 +97,19 @@ function App() {
                     <Route path="/my-account" element={<MyAccount />} />
                     
 
-                    {/* Auth Pages */}
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/sign-up" element={<Signup />} />
-                  </Routes>
+                {/* Auth Pages */}
+                <Route path="/login" element={<Login />} />
+                <Route path="/sign-up" element={<Signup />} />
+
+                {/* Admin Pages */}
+                <Route path="/admin-login" element={<AdminLogin />} />
+                <Route path="/admin-dashboard" element={<AdminDashboard />} />
+                <Route path="/admin-customers" element={<AdminCustomers />} />
+                <Route path="/admin-customer-view" element={<AdminCustomersView />} />
+                
+                
+              </Routes>
+                    
                 </div>
               </div>
             </div>
