@@ -27,6 +27,8 @@ import SelectingRequestType from './pages/creatingAnOrder/SelectingRequestType'
 import ViewOrder from './pages/creatingAnOrder/ViewOrder'
 import Managers from './pages/managers/Managers'
 
+import AdminUser from './adminpages/pages/adminuser/AdminUsers';
+
 function App() {
   const location = useLocation()
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
@@ -101,6 +103,7 @@ function App() {
                     <Route path="/admin-dashboard" element={<AdminDashboard />} />
                     <Route path="/admin-customers" element={<AdminCustomers />} />
                     <Route path="/admin-customer-view" element={<AdminCustomersView />} />
+                    <Route path="/admin-user" element={<AdminUser />} />
                   </Routes>
                 </div>
               </div>
