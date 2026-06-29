@@ -5,7 +5,7 @@ import { Dropdown } from "react-bootstrap";
 import AdminImg from "../assets/images/admin-img.png"
 import DropDownImg from "../assets/icons/DropDownImg";
 
-const DashboardHeader = () => {
+const AdminHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -46,8 +46,8 @@ const DashboardHeader = () => {
                             </span>
                             <div className="text-drop d-md-flex align-items-center gap-2 d-none">
                               <div className="text-drop-down">
-                                <h6 className="p-0 m-0">John Smith</h6>
-                                <p className="p-0 m-0">Privet Investigator</p>
+                                <h6 className="p-0 m-0">Bray Chris</h6>
+                                <p className="p-0 m-0">Admin User</p>
                               </div>
                               <DropDownImg />
                             </div>
@@ -78,4 +78,4 @@ const DashboardHeader = () => {
   )
 }
 
-export default DashboardHeader
+export default AdminHeader
