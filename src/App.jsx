@@ -29,6 +29,8 @@ import Managers from './pages/managers/Managers'
 import UserLayout from './layoutCondition/UserLayout';
 import AdminLayout from './layoutCondition/AdminLayout';
 
+import AdminUser from './adminpages/pages/adminuser/AdminUsers';
+
 function App() {
   const location = useLocation()
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
@@ -107,8 +109,9 @@ function App() {
                         <Route path="/admin-dashboard" element={<AdminDashboard />} />
                         <Route path="/clients" element={<AdminCustomers />} />
                         <Route path="/admin-customer-view" element={<AdminCustomersView />} />
+                    <Route path="/admin-user" element={<AdminUser />} />
                       </Route>
-                        <Route path="/admin-login" element={<AdminLogin />} />
+                    <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>
                 </div>
               </div>
