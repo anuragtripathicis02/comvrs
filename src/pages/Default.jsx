@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Dropdown, FloatingLabel, Form, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import DefaultLGModal from '../modalComponent/DefaultLGModal';
@@ -59,8 +59,8 @@ const Default = () => {
 
 const [page, setPage] = useState(1);
 const totalPages = 2;
-const totalOrders = 80;
-const visibleOrders = 15;
+// const totalOrders = 80;
+// const visibleOrders = 15;
 
 
   return (
