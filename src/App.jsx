@@ -26,6 +26,8 @@ import AdminCustomersView from './adminpages/pages/customerview/CustomerView';
 import SelectingRequestType from './pages/creatingAnOrder/SelectingRequestType'
 import ViewOrder from './pages/creatingAnOrder/ViewOrder'
 import Managers from './pages/managers/Managers'
+import UserLayout from './layoutCondition/UserLayout';
+import AdminLayout from './layoutCondition/AdminLayout';
 
 function App() {
   const location = useLocation()
@@ -37,6 +39,7 @@ function App() {
 
   const noContainerRoutes = ['/view-invoice-due'];
   const isNoContainerPage = noContainerRoutes.includes(location.pathname);
+
 
   const centeredRoutes = ['/dashboard', '/services'];
   const isCenteredPage = centeredRoutes.includes(location.pathname);
@@ -66,8 +69,8 @@ function App() {
 
   return ( 
     <div className='dashboard-com'>
-      {!isLoginPage && <DashboardHeader />}
-      {!isLoginPage && <SideNavbar />}
+      {/* {!isLoginPage && <DashboardHeader />}
+      {!isLoginPage && <SideNavbar />} */}
 
 
 
@@ -78,29 +81,34 @@ function App() {
              <div className={isCenteredPage ? "row justify-content-center" : ""}>
                 <div className={isCenteredPage ? "col-xl-10 col-12" : ""}>
                   <Routes>
-                    <Route path="/" element={<Navigate to="/dashboard" replace />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/completing-profile" element={<CompletingProfile />} />
-                    <Route path="/creating-an-order" element={<CreatingAnOrder />} />
-                    <Route path="/selecting-request-type" element={<SelectingRequestType />} />
-                    <Route path="/view-order" element={<ViewOrder />} />
-                    <Route path="/default" element={<Default />} />
-                    <Route path="/news-updates" element={<NewsUpdates />} />
-                    <Route path="/invoice-billing" element={<InvoiceBilling />} />
-                    <Route path="/view-invoice" element={<ViewInvoice />} />
-                    <Route path="/view-invoice-due" element={<ViewDueInvoice />} />
-                    <Route path="/managers" element={<Managers />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/child-users" element={<ChildUsers />} />
-                    <Route path="/my-account" element={<MyAccount />} />
+
+                    <Route element={<UserLayout />}>
+                      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+                      <Route path="/dashboard" element={<Dashboard />} />
+                      <Route path="/completing-profile" element={<CompletingProfile />} />
+                      <Route path="/creating-an-order" element={<CreatingAnOrder />} />
+                      <Route path="/selecting-request-type" element={<SelectingRequestType />} />
+                      <Route path="/view-order" element={<ViewOrder />} />
+                      <Route path="/default" element={<Default />} />
+                      <Route path="/news-updates" element={<NewsUpdates />} />
+                      <Route path="/invoice-billing" element={<InvoiceBilling />} />
+                      <Route path="/view-invoice" element={<ViewInvoice />} />
+                      <Route path="/view-invoice-due" element={<ViewDueInvoice />} />
+                      <Route path="/managers" element={<Managers />} />
+                      <Route path="/services" element={<Services />} />
+                      <Route path="/child-users" element={<ChildUsers />} />
+                      <Route path="/my-account" element={<MyAccount />} />
+                    </Route>
+                      <Route path="/login" element={<Login />} />
+                      <Route path="/sign-up" element={<Signup />} />
                     {/* Auth Pages */}
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/sign-up" element={<Signup />} />
                     {/* Admin Pages */}
-                    <Route path="/admin-login" element={<AdminLogin />} />
-                    <Route path="/admin-dashboard" element={<AdminDashboard />} />
-                    <Route path="/admin-customers" element={<AdminCustomers />} />
-                    <Route path="/admin-customer-view" element={<AdminCustomersView />} />
+                      <Route element={<AdminLayout />}>
+                        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+                        <Route path="/clients" element={<AdminCustomers />} />
+                        <Route path="/admin-customer-view" element={<AdminCustomersView />} />
+                      </Route>
+                        <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 .app-sidebar {
-    z-index: 9999;
+    z-index: 999;
     width: 270px;
     height: 100svh;
-    padding: 24px 24px 16px ;
+    padding: 0px 24px 16px ;
     position: fixed;
     top: 0px;
     left: 0;
@@ -13,6 +13,10 @@
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.app-sidebar::-webkit-scrollbar {
+  display: none;
+} 
 .sidebar-nav {padding: 0; margin: 0px;list-style-type: none;}
 .sidebar-nav li{ padding: 0px; margin-bottom: 1px;}
 .sidebar-nav .sidebar-link {
@@ -44,14 +48,19 @@
 }
 
 .logo-box {
-    position: relative;
+    position: sticky;
+    background: #c8d9cb;
+    top: 0;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 
 .logo-box .big-logo {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s ease;    
-    margin: 0 auto 40px;
+    margin: 0 auto 10px;
     text-align: center;
     display: block;
 }
@@ -64,6 +73,31 @@
 /*******full page hide only side menu********/
 
 
+
+.text-head-menu {
+    margin: 20px 0 !important;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--primary2-500);
+}
+
+.text-head-menu:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--primary2-300);
+    position: absolute;
+    top: 9px;
+    right: 0;
+}
+
+.text-head-menu .sub-text {
+    background: #c8d9cb;
+    position: relative;
+    padding: 0 9px 0 0;
+}
 
 
 
@@ -90,6 +124,8 @@
     body.hide-sidebar-layout  .header-dashboard .flex-grow-1 {
         padding: 11px 24px;
     }
+
+
 
 }
 
@@ -120,6 +156,17 @@
         max-width: 209px;
         padding: 0 17px 15px;
     }
+
+    
+    .logo-box {
+        position: relative;
+        background: transparent;
+        top: auto;
+        z-index: 1;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
 
 }
 
