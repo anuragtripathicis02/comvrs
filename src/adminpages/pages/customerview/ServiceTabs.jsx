@@ -4,6 +4,9 @@ import TrackOrders from "./TrackOrders";
 import MyOrdersTable from "./MyOrdersTable";
 import InvoiceHistory from "./InvoiceHistory";
 import TopFilter from "./TopFilter";
+import ChildUsers from "./ChildUsers";
+import ChildUsersFilter from "./ChildUsersFilter";
+import ProfileDetails from "./ProfileDetails";
 
 const TabTitle = ({ title }) => (
   <div className="tab-simple-tabs d-flex align-items-center gap-2">
@@ -40,7 +43,7 @@ const ServiceTabs = () => {
       <Tabs activeKey={activeKey} onSelect={handleTabClick} className="tabs-default-box">
         <Tab eventKey="First" title={<TabTitle title="Profile Details" />}>
           <div className="tabs-content-box mt-4 ps-30 pe-30 position-relative">
-           1
+           <ProfileDetails/>
           </div>
         </Tab>
         <Tab eventKey="Second" title={<TabTitle title="Track Orders" />}>
@@ -57,7 +60,8 @@ const ServiceTabs = () => {
         </Tab>
         <Tab eventKey="four" title={<TabTitle title="Child Users" />}>
           <div className="tabs-content-box mt-4 ps-30 pe-30 position-relative">
-                4
+                <ChildUsersFilter/>
+                <ChildUsers/>
           </div>
         </Tab>
         <Tab eventKey="five" title={<TabTitle title="Managers" />}>
