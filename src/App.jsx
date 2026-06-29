@@ -32,7 +32,7 @@ function App() {
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
-  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order']
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
   const noContainerRoutes = ['/view-invoice-due'];
@@ -79,7 +79,6 @@ function App() {
                 <div className={isCenteredPage ? "col-xl-10 col-12" : ""}>
                   <Routes>
                     <Route path="/" element={<Navigate to="/dashboard" replace />} />
-
                     <Route path="/dashboard" element={<Dashboard />} />
                     <Route path="/completing-profile" element={<CompletingProfile />} />
                     <Route path="/creating-an-order" element={<CreatingAnOrder />} />
@@ -94,21 +93,15 @@ function App() {
                     <Route path="/services" element={<Services />} />
                     <Route path="/child-users" element={<ChildUsers />} />
                     <Route path="/my-account" element={<MyAccount />} />
-                    
-
                     {/* Auth Pages */}
                     <Route path="/login" element={<Login />} />
                     <Route path="/sign-up" element={<Signup />} />
-
                     {/* Admin Pages */}
                     <Route path="/admin-login" element={<AdminLogin />} />
                     <Route path="/admin-dashboard" element={<AdminDashboard />} />
                     <Route path="/admin-customers" element={<AdminCustomers />} />
                     <Route path="/admin-customer-view" element={<AdminCustomersView />} />
-                    
-                    
                   </Routes>
-                        
                 </div>
               </div>
             </div>

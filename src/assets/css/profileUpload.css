@@ -1,0 +1,35 @@
+button.camera-btn {
+    position: absolute;
+    bottom: -5px;
+    right: -14px;
+}
+
+.profile-upload .image-box {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+
+.profile-upload .upload-text {
+    display: block;
+    position: absolute;
+    left: 130px;
+    bottom: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--secondary-500);
+}
+
+.profile-upload {
+    max-width: 325px;
+}
+
+.profile-upload .image-box .profile-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 100%;
+    object-fit: cover;
+}
