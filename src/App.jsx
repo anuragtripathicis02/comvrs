@@ -64,7 +64,7 @@ function App() {
     });
   }, []);
 
-  return (
+  return ( 
     <div className='dashboard-com'>
       {!isLoginPage && <DashboardHeader />}
       {!isLoginPage && <SideNavbar />}
