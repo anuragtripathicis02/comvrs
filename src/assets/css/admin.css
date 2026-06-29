@@ -116,6 +116,9 @@
 
 .fs-14 p{ font-size: 14px;}
 .list-v-middle svg{ vertical-align: -4px;}
+ 
+.table-text-left table tr th:nth-child(2),
+.table-text-left table tr td:nth-child(2){ text-align: left !important;}
 
 @media only screen and (max-width: 991px){
 .profileInfo { margin-bottom: 30px;}
