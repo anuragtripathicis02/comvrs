@@ -37,13 +37,13 @@ const MyOrdersTable = () => {
             <tbody>
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg1} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Hepner Daniel</p>
                                 <span className='text-grn'>#1004</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Cyber Infrastructure Pvt. Ltd.</p>
@@ -75,13 +75,13 @@ const MyOrdersTable = () => {
                 </tr>  
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg2} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Hepner Daniel</p>
                                 <span className='text-grn'>#1004</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Daniel A. Hepner, P.C.</p>
@@ -113,13 +113,13 @@ const MyOrdersTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg1} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Smith Adam</p>
                                 <span className='text-grn'>#1021</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Smith and Smith Attorneys at Law</p>
@@ -151,13 +151,13 @@ const MyOrdersTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg3} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Payable Accounts</p>
                                 <span className='text-grn'>#1022</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Sweetbaum Sands Anderson PC</p>
@@ -189,13 +189,13 @@ const MyOrdersTable = () => {
                 </tr> 
                  <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg4} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Bray Chris</p>
                                 <span className='text-grn'>#169</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>CoMVRs In House Account</p>
@@ -227,13 +227,13 @@ const MyOrdersTable = () => {
                 </tr>
                  <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg1} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Wallace Rachael</p>
                                 <span className='text-grn'>#345678</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Baumgartner Law, LLC</p>
@@ -265,13 +265,13 @@ const MyOrdersTable = () => {
                 </tr> 
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg3} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Payable Accounts</p>
                                 <span className='text-grn'>#1022</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Sweetbaum Sands Anderson PC</p>
@@ -303,13 +303,13 @@ const MyOrdersTable = () => {
                 </tr> 
                  <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg4} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Bray Chris</p>
                                 <span className='text-grn'>#169</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>CoMVRs In House Account</p>
@@ -341,13 +341,13 @@ const MyOrdersTable = () => {
                 </tr>
                 <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg3} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Payable Accounts</p>
                                 <span className='text-grn'>#1022</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>Sweetbaum Sands Anderson PC</p>
@@ -379,13 +379,13 @@ const MyOrdersTable = () => {
                 </tr> 
                  <tr>
                     <td>
-                        <div className='auth-info d-flex align-items-center gap-2'>
+                        <Link to="/admin-customer-view" className='auth-info d-flex align-items-center gap-2'>
                             <img src={UserImg4} alt="" />
                             <div className=''>
                                 <p className='mb-0'>Bray Chris</p>
                                 <span className='text-grn'>#169</span>
                             </div>
-                        </div>
+                        </Link>
                     </td>
                     <td>
                         <p className='mb-0'>CoMVRs In House Account</p>

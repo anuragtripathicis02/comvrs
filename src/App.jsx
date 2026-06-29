@@ -109,7 +109,7 @@ function App() {
                         <Route path="/admin-dashboard" element={<AdminDashboard />} />
                         <Route path="/clients" element={<AdminCustomers />} />
                         <Route path="/admin-customer-view" element={<AdminCustomersView />} />
-                    <Route path="/admin-user" element={<AdminUser />} />
+                        <Route path="/admin-user" element={<AdminUser />} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>

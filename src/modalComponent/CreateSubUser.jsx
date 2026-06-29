@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Tab, FloatingLabel, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import SubUserCreatedModal from "./SubUserCreatedModal";
 
 const CreateSubUser = ({ show, handleClose }) => {
           const [showPass, setShowPass] = useState(false);
