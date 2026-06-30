@@ -28,6 +28,9 @@ import UserLayout from './layoutCondition/UserLayout';
 import AdminLayout from './layoutCondition/AdminLayout';
 
 import AdminUser from './adminpages/pages/adminuser/AdminUsers';
+import ChildUser from './adminpages/pages/childuser/ChildUser';
+import ManageProducts from './adminpages/pages/manageproducts/ManageProducts';
+import InvoiceAndBilling from './adminpages/pages/invoiceandbilling/InvoiceAndBilling';
 
 function App() {
   const location = useLocation()
@@ -101,13 +104,16 @@ function App() {
                     </Route>
                       <Route path="/login" element={<Login />} />
                       <Route path="/sign-up" element={<Signup />} />
-                    {/* Auth Pages */}
-                    {/* Admin Pages */}
+                        {/* Auth Pages */}
+                        {/* Admin Pages */}
                       <Route element={<AdminLayout />}>
                         <Route path="/admin-dashboard" element={<AdminDashboard />} />
                         <Route path="/clients" element={<AdminCustomers />} />
                         <Route path="/admin-customer-view" element={<AdminCustomersView />} />
                         <Route path="/admin-user" element={<AdminUser />} />
+                        <Route path="/child-user" element={<ChildUser />} />
+                        <Route path="/manage-products" element={<ManageProducts/>} />
+                        <Route path="/invoice-and-billing" element={<InvoiceAndBilling/>} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>

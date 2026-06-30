@@ -3,15 +3,12 @@ import { Form, Table } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import EditIcons from '../../../assets/icons/EditIcons'
 import DeleteIcons from '../../../assets/icons/DeleteIcons'
-import CreateSubUser from '../../../modalComponent/CreateSubUser'
 
 const ChildUsers = () => {
      // table pagination 
         
         const [page, setPage] = useState(1);
         const totalPages = 80;
-        const totalOrders = 80;
-        const visibleOrders = 15;
         
         const [userStatus, setUserStatus] = useState({
             user1: true,
@@ -23,10 +20,6 @@ const ChildUsers = () => {
             user7: false,
             user8: false,
         });
-    
-    
-        
-    
     
     return (
         <>
