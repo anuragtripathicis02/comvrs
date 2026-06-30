@@ -128,6 +128,10 @@
     background: var(--success-50);
 }
 
+.green-border {
+    border-color: var(--error-50);
+}
+
 .lighter-red {
     background: var(--error-50);
 }

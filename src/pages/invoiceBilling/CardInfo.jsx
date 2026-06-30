@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import AmricanIcons from '../../assets/images/american-icons.png'
 import EditIcons from '../../assets/icons/EditIcons'
 import EditCardDetailsModal from '../../modalComponent/EditCardDetailsModal'

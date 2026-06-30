@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FloatingLabel, Form } from 'react-bootstrap'
 
 const AdministratorInfo = () => {
