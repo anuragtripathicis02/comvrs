@@ -1,4 +1,3 @@
-import React from 'react'
 import ServiceTabs from './ServiceTabs'
 import ProfileCard from './ProfileCard'
 import BackArrow from '../../../assets/icons/BackArrow'
