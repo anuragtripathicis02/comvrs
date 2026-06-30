@@ -161,6 +161,12 @@ label {
     padding: 9px;
 }
 
+.bg-white.border-white:hover {
+    color: var(--primary2-500);
+    border-color: var(--primary2-500) !important;
+}
+
+
 
 /**********checkbox radio swich btn design***************/
 
@@ -1049,6 +1055,14 @@ input:-webkit-autofill {
     cursor: pointer;
 }
 
+.pading-right-icons {
+    padding-right: 80px !important;
+}
+
+.pading-right-icons a {
+    color: var(--secondary-300);
+}
+
 @media only screen and (max-width: 1400px) {
 
     .form-control,
@@ -1112,6 +1126,18 @@ input:-webkit-autofill {
     
     .flag-phone-sec button {
         padding: 10px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 424px) {
+
+    .btn-bottom-sec .btn-outline {
+        padding: 5px 7px;
+        font-size: 13px;
     }
 
 }

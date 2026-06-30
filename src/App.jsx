@@ -28,6 +28,11 @@ import UserLayout from './layoutCondition/UserLayout';
 import AdminLayout from './layoutCondition/AdminLayout';
 
 import AdminUser from './adminpages/pages/adminuser/AdminUsers';
+import CreateEditCustomer from './adminpages/pages/createEditCustomer/CreateEditCustomer';
+import ViewOrders from './adminpages/pages/viewOrder/ViewOrder';
+import ViewBillInvoice from './adminpages/pages/viewInvoice/ViewInvoice';
+import Settings from './adminpages/pages/settings/Settings';
+import ActivityLog from './adminpages/pages/activityLog/ActivityLog';
 import ChildUser from './adminpages/pages/childuser/ChildUser';
 import ManageProducts from './adminpages/pages/manageproducts/ManageProducts';
 import InvoiceAndBilling from './adminpages/pages/invoiceandbilling/InvoiceAndBilling';
@@ -37,7 +42,7 @@ function App() {
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
-  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account']
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
   const noContainerRoutes = ['/view-invoice-due'];
@@ -111,6 +116,11 @@ function App() {
                         <Route path="/clients" element={<AdminCustomers />} />
                         <Route path="/admin-customer-view" element={<AdminCustomersView />} />
                         <Route path="/admin-user" element={<AdminUser />} />
+                        <Route path="/create-edit-customer" element={<CreateEditCustomer />} />
+                        <Route path="/view-orders" element={<ViewOrders />} />
+                        <Route path="/view-bill-invoice" element={<ViewBillInvoice />} />
+                        <Route path="/setting" element={<Settings />} />
+                        <Route path="/activity-log" element={<ActivityLog />} />
                         <Route path="/child-user" element={<ChildUser />} />
                         <Route path="/manage-products" element={<ManageProducts/>} />
                         <Route path="/invoice-and-billing" element={<InvoiceAndBilling/>} />

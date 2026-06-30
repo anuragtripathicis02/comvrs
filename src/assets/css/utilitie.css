@@ -14,6 +14,10 @@
     border-radius: 12px;
 }
 
+.radius-8 {
+    border-radius: 8px !important;
+}
+
 .container {
     padding: 0 25px;
     max-width: 1350px;
@@ -65,6 +69,10 @@
     background: var(--error-50) !important;
 }
 
+.red-border {
+    border-color: var(--error-600) !important;
+ }
+
 .red-btn-border {
     border-color: var(--error-50) !important;
 }
@@ -74,6 +82,14 @@
 
 .green-btn {
     background: var(--primary2-50) !important;
+}
+
+.green-lighter-text {
+    color: var(--success-600) !important;
+}
+
+.green-lighter-btn {
+    background: var(--success-50) !important;
 }
 
 .text-link {
@@ -100,6 +116,10 @@
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--primary2-500);
+}
+
+.text-light-text {
+    color: var(--secondary-300);
 }
 
 @media only screen and (max-width:1199px) {

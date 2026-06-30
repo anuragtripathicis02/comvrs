@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import EyeIcons from '../../../assets/icons/EyeIcons'
-import EditIcons from '../../../assets/icons/EditIcons'
 import Download from '../../../assets/icons/Download'
-import { Dropdown, Table } from 'react-bootstrap'
+import { Table } from 'react-bootstrap'
 
 
 const InvoiceHistory = () => {
@@ -11,8 +10,6 @@ const InvoiceHistory = () => {
 
     const [page, setPage] = useState(1);
     const totalPages = 80;
-    const totalOrders = 80;
-    const visibleOrders = 15;
 
     return (
         <div className="table-default min-w-1200">
@@ -57,7 +54,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -97,7 +94,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -131,7 +128,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -165,7 +162,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -199,7 +196,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -233,7 +230,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -267,7 +264,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
@@ -301,7 +298,7 @@ const InvoiceHistory = () => {
                         <td>
                             <ul className='d-flex p-0 m-0 align-items-center gap-3 list-unstyled justify-content-center'>
                                 <li>
-                                    <Link to="" className='icons-link'>
+                                    <Link to="/view-bill-invoice" className='icons-link'>
                                         <EyeIcons />
                                     </Link>
                                 </li>
