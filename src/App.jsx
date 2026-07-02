@@ -36,6 +36,9 @@ import ActivityLog from './adminpages/pages/activityLog/ActivityLog';
 import ChildUser from './adminpages/pages/childuser/ChildUser';
 import ManageProducts from './adminpages/pages/manageproducts/ManageProducts';
 import InvoiceAndBilling from './adminpages/pages/invoiceandbilling/InvoiceAndBilling';
+import Announcements from './adminpages/pages/announcements/Announcements';
+import CreateNewProduct from './adminpages/pages/manageproducts/CreateNewProduct';
+import SelectDataFields from './adminpages/pages/manageproducts/SelectDataFields';
 import Advertisement from './adminpages/pages/advertisement/Advertisement';
 
 function App() {
@@ -43,7 +46,7 @@ function App() {
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
-  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log']
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log', '/Announcement', '/create-new-product', '/select-data-field']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
   const noContainerRoutes = ['/view-invoice-due'];
@@ -125,6 +128,9 @@ function App() {
                         <Route path="/child-user" element={<ChildUser />} />
                         <Route path="/manage-products" element={<ManageProducts/>} />
                         <Route path="/invoice-and-billing" element={<InvoiceAndBilling/>} />
+                        <Route path="/Announcement" element={<Announcements/>} />
+                        <Route path="/create-new-product" element={<CreateNewProduct/>} />
+                        <Route path="/select-data-field" element={<SelectDataFields/>} />
                         <Route path="/advertisement" element={<Advertisement/>} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />

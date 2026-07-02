@@ -1,7 +1,5 @@
-import React, {useEffect, useRef, useState} from 'react'
+import  {useEffect, useRef, useState} from 'react'
 import { Modal, Button, Tab, Tabs, FloatingLabel, Form } from "react-bootstrap";
-import EditIcons from '../assets/icons/EditIcons';
-import OnlyFlagPhoneInput from '../comonComponent/OnlyFlagPhoneInput';
 import { DatePicker } from 'rsuite';
 
 const TabTitle = ({ title, icon }) => (
@@ -12,8 +10,6 @@ const TabTitle = ({ title, icon }) => (
 );
 
 const PaymentInfoModal = ({ show, handleClose }) => {
-     const [fileSelected, setFileSelected] = useState(false);
-
      
        const [activeKey, setActiveKey] = useState("First");
      

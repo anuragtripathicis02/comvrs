@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import CompanyInfoModal from '../../modalComponent/CompanyInfoModal'
 import PaymentInfoModal from '../../modalComponent/PaymentInfoModal';
 
