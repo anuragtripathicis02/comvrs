@@ -39,6 +39,7 @@ import InvoiceAndBilling from './adminpages/pages/invoiceandbilling/InvoiceAndBi
 import Announcements from './adminpages/pages/announcements/Announcements';
 import CreateNewProduct from './adminpages/pages/manageproducts/CreateNewProduct';
 import SelectDataFields from './adminpages/pages/manageproducts/SelectDataFields';
+import Advertisement from './adminpages/pages/advertisement/Advertisement';
 
 function App() {
   const location = useLocation()
@@ -130,6 +131,7 @@ function App() {
                         <Route path="/Announcement" element={<Announcements/>} />
                         <Route path="/create-new-product" element={<CreateNewProduct/>} />
                         <Route path="/select-data-field" element={<SelectDataFields/>} />
+                        <Route path="/advertisement" element={<Advertisement/>} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>
