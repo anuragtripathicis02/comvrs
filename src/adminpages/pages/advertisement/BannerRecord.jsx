@@ -52,9 +52,7 @@ const BannerRecord = () => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu align="end">
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    <Dropdown.Item href="/edit-advertisement">edit advertisement</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
@@ -100,9 +98,7 @@ const BannerRecord = () => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu align="end">
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                   <Dropdown.Item href="/edit-advertisement">edit advertisement</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
@@ -150,9 +146,7 @@ const BannerRecord = () => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu align="end">
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    <Dropdown.Item href="/edit-advertisement">edit advertisement</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
@@ -201,9 +195,7 @@ const BannerRecord = () => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu align="end">
-                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                   <Dropdown.Item href="/edit-advertisement">edit advertisement</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
