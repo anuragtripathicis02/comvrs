@@ -1,0 +1,40 @@
+.promotion-box-com .promo-box {
+    width: 23%;
+}
+
+.promotion-box-com .promo-box-date {
+    width: calc(31% - 24px);
+}
+
+
+@media only screen and (max-width: 992px){
+   .promotion-box-com .promo-box-date {
+        width: calc(39% - 24px);
+    }
+
+    .promotion-box-com .promo-box {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+   .promotion-box-com .promo-box-date {
+        width: 100%;
+    }
+    
+    .promotion-box-com .promo-box {
+        width: 100%;
+    }
+
+    .promotion-box-com .promo-box:last-child {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 150px;
+    }
+
+    .promotion-box-com p {
+        font-size: 14px !important;
+    }
+
+}
