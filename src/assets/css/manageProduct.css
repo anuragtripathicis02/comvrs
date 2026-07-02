@@ -1,0 +1,121 @@
+.h-80 {
+    min-height: 80svh;
+}
+
+.listing-manage {
+    max-width: 725px;
+}
+
+.listing-manage .link-box {
+    background: var(--gray-1) !important;
+    padding: 32px 25px;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid var(--secondary-100);
+    box-shadow: 8px 8px 16px 0px #00000014;
+    transition: all 0.5s ease;    
+    color: var(--secondary-900);
+    box-shadow: none !important;
+}
+
+.listing-manage ul li {
+    width: 48%;
+}
+
+.listing-manage .link-box:hover {
+    border-color: var(--primary2-400) !important;
+    transform: translateY(-5px);
+    color: var(--primary2-400);
+}
+
+.listing-manage .link-box:hover, .listing-manage .link-box:hover h5, .listing-manage .link-box:hover p {
+    color: var(--primary2-400);
+}
+
+.listing-manage h5 {
+    color: var(--secondary-900);
+    transition: all 0.5s ease; 
+}
+
+.listing-manage p {
+    color: var(--secondary-500);    
+    transition: all 0.5s ease; 
+}
+
+ul.tabs-fifty li {
+    width: 50%;
+}
+
+ul.tabs-fifty li button {
+    width: 100%;
+    text-align: center;
+}
+
+ul.list-procced.fixed-modal li .form-check label {
+    padding: 0;
+}
+
+ul.list-procced.fixed-modal li .form-check {
+    padding-left: 25px;
+    margin: 6px 0;
+}
+
+ul.list-procced.fixed-modal li:has(.form-check-input:checked[type="radio"]) {
+    border: none;
+}
+
+ul.list-procced.fixed-modal li {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+
+
+
+.procced-sec.scrollable {
+    overflow-y: auto;
+    height: 48vh;
+}
+
+
+
+
+.right-drag-mouse {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: max-content;
+}
+
+.right-drag-mouse a {
+    display: block;
+    width: max-content;
+}
+
+.delete-box {
+    position: absolute;
+    right: 0;
+    left: auto;
+    width: max-content;
+    top: 10px;
+}
+
+
+@media only screen and (max-width:992px){
+
+.right-drag-mouse {
+    top: -6px;
+}
+
+.delete-box {
+    top: -4px
+}
+
+}
+
+@media only screen and (max-width:600px){
+    
+    .listing-manage ul li {
+        width: 100%;
+    }
+}

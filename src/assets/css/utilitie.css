@@ -107,7 +107,7 @@
 }
 
 .color-secondary-500 {
-    color: var(--secondary-500);
+    color: var(--secondary-500) !important;
 }
 
 .head-box-icons p {
