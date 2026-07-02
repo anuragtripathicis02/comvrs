@@ -1,5 +1,4 @@
 
-import React from "react";
 import { Modal, Button, Tab, FloatingLabel, Form } from "react-bootstrap";
 import AmricanIcons from '../assets/images/american-icons.png'
 import { DatePicker } from "rsuite";

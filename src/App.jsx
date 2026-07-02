@@ -40,6 +40,7 @@ import Announcements from './adminpages/pages/announcements/Announcements';
 import CreateNewProduct from './adminpages/pages/manageproducts/CreateNewProduct';
 import SelectDataFields from './adminpages/pages/manageproducts/SelectDataFields';
 import Advertisement from './adminpages/pages/advertisement/Advertisement';
+import Promotion from './adminpages/pages/promotions/Promotion';
 import EditAdvertisement from './adminpages/pages/editadvertisement/EditAdvertisement';
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log', '/Announcement', '/create-new-product', '/select-data-field', '/admin-customer-view', '/advertisement', '/promotion']
   const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log', '/Announcement', '/create-new-product', '/select-data-field', '/admin-customer-view', '/advertisement', '/edit-advertisement']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
@@ -133,6 +135,7 @@ function App() {
                         <Route path="/create-new-product" element={<CreateNewProduct/>} />
                         <Route path="/select-data-field" element={<SelectDataFields/>} />
                         <Route path="/advertisement" element={<Advertisement/>} />
+                        <Route path="/promotion" element={<Promotion/>} />
                         <Route path="/edit-advertisement" element={<EditAdvertisement/>} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />
