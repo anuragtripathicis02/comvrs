@@ -36,6 +36,7 @@ import ActivityLog from './adminpages/pages/activityLog/ActivityLog';
 import ChildUser from './adminpages/pages/childuser/ChildUser';
 import ManageProducts from './adminpages/pages/manageproducts/ManageProducts';
 import InvoiceAndBilling from './adminpages/pages/invoiceandbilling/InvoiceAndBilling';
+import Advertisement from './adminpages/pages/advertisement/Advertisement';
 
 function App() {
   const location = useLocation()
@@ -124,6 +125,7 @@ function App() {
                         <Route path="/child-user" element={<ChildUser />} />
                         <Route path="/manage-products" element={<ManageProducts/>} />
                         <Route path="/invoice-and-billing" element={<InvoiceAndBilling/>} />
+                        <Route path="/advertisement" element={<Advertisement/>} />
                       </Route>
                     <Route path="/admin-login" element={<AdminLogin />} />
                   </Routes>

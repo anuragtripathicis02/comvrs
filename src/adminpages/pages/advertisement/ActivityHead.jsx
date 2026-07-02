@@ -1,0 +1,62 @@
+
+import { Form } from 'react-bootstrap'
+
+
+const ActivityHead = () => {
+  return (
+    <div className='billing-history-sec'>
+        {/* <div className="head-box w-100 mb-2">
+            <p className="m-0 font-w-600 fs-16">Billing History</p>
+        </div> */}
+        <div className='fice-col-box white-select'>
+            <div className="header-list-box p-0 mb-2 border-0 radius-0">
+                <ul className="p-0 pb-2 min-w-900 m-0 list-unstyled d-flex radius-0  flex-wrap">
+                    <li>
+                        <Form.Group className="position-relative search-box">
+                            <Form.Control type="text" placeholder="Search Tenders..." className='ps-5 w-100'/>
+                            <span className='icons cursor-pointer position-absolute'>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z" stroke="#97979E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M15.8037 15.8032L21.0003 20.9998" stroke="#97979E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                            </span>
+                        </Form.Group>
+                    </li>
+                   
+                    <li>
+                        <Form.Group className="form-group position-relative select-with-text" controlId="exampleForm.ControlTextarea1">
+                            <span className="option-in-select">Status : </span>
+                            <Form.Select aria-label="Default select example">
+                                <option>Any</option>
+                                <option value="1"> First One</option>
+                                <option value="2"> First Two</option>
+                                <option value="3"> First Three</option>
+                            </Form.Select>
+                        </Form.Group>  
+                    </li>
+                    <li>
+                        <Form.Group className="form-group position-relative select-with-text" controlId="exampleForm.ControlTextarea1">
+                            <span className="option-in-select">For :  </span>
+                            <Form.Select aria-label="Default select example">
+                                <option>Anyone</option>
+                                <option value="1"> First One</option>
+                                <option value="2"> First Two</option>
+                                <option value="3"> First Three</option>
+                            </Form.Select>
+                        </Form.Group>  
+                    </li>
+                     <li>
+                        <button className="small-btn-outline btn-outline fill-btn d-flex align-items-center gap-2 text-nowrap flex-nowrap justify-content-center">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM10 16.875C8.64026 16.875 7.31105 16.4718 6.18046 15.7164C5.04987 14.9609 4.16868 13.8872 3.64833 12.6309C3.12798 11.3747 2.99183 9.99237 3.2571 8.65875C3.52238 7.32513 4.17716 6.10013 5.13864 5.13864C6.10013 4.17716 7.32514 3.52237 8.65876 3.2571C9.99238 2.99183 11.3747 3.12798 12.631 3.64833C13.8872 4.16868 14.9609 5.04987 15.7164 6.18045C16.4718 7.31104 16.875 8.64025 16.875 10C16.8729 11.8227 16.1479 13.5702 14.8591 14.8591C13.5702 16.1479 11.8227 16.8729 10 16.875ZM13.75 10C13.75 10.1658 13.6842 10.3247 13.5669 10.4419C13.4497 10.5592 13.2908 10.625 13.125 10.625H10.625V13.125C10.625 13.2908 10.5592 13.4497 10.4419 13.5669C10.3247 13.6842 10.1658 13.75 10 13.75C9.83424 13.75 9.67527 13.6842 9.55806 13.5669C9.44085 13.4497 9.375 13.2908 9.375 13.125V10.625H6.875C6.70924 10.625 6.55027 10.5592 6.43306 10.4419C6.31585 10.3247 6.25 10.1658 6.25 10C6.25 9.83424 6.31585 9.67527 6.43306 9.55806C6.55027 9.44085 6.70924 9.375 6.875 9.375H9.375V6.875C9.375 6.70924 9.44085 6.55027 9.55806 6.43306C9.67527 6.31585 9.83424 6.25 10 6.25C10.1658 6.25 10.3247 6.31585 10.4419 6.43306C10.5592 6.55027 10.625 6.70924 10.625 6.875V9.375H13.125C13.2908 9.375 13.4497 9.44085 13.5669 9.55806C13.6842 9.67527 13.75 9.83424 13.75 10Z" fill="currentColor"/>
+</svg>
+
+                            <span>Create Ad</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+  )
+}
+
+export default ActivityHead
