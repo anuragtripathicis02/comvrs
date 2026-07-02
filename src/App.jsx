@@ -46,7 +46,7 @@ function App() {
   const hideLayoutRoutes = ['/login', '/sign-up', '/admin-login']
   const isLoginPage = hideLayoutRoutes.includes(location.pathname)
 
-  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log', '/Announcement', '/create-new-product', '/select-data-field']
+  const extraClassRoutes = ['/invoice-billing', '/services', '/child-users', '/view-invoice', '/view-invoice-due', '/creating-an-order', '/selecting-request-type', '/view-order', '/managers', '/my-account', '/create-edit-customer', '/view-orders', '/view-bill-invoice', '/setting', '/activity-log', '/Announcement', '/create-new-product', '/select-data-field', '/admin-customer-view', '/advertisement']
   const hasExtraClass = extraClassRoutes.includes(location.pathname)
 
   const noContainerRoutes = ['/view-invoice-due'];
