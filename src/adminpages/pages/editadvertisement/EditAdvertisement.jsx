@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom"
 import BackArrow from "../../../assets/icons/BackArrow"
 import { Breadcrumb } from "react-bootstrap"
-import ActivityHead from "./ActivityHead"
-import BannerRecord from "./BannerRecord"
-const Advertisement = () => {
+import BasicDetails from "./BasicDetails"
+import AdvertiseforAttorneys from "./AdvertiseforAttorneys"
+import AdvertiseforInvestigatorsOthers from "./AdvertiseforInvestigatorsOthers"
+const EditAdvertisement = () => {
   return (
-    <>
-         <div className="page-title">
+    <div>
+       <div className="page-title">
             <div className="d-flex align-items-center gap-2">
                 <Link to="" className="icon-back">
                     <BackArrow />
@@ -20,12 +21,20 @@ const Advertisement = () => {
                 </div>
             </div>
         </div>
-
-        <ActivityHead/>
-        <BannerRecord/>
-        
-    </>
+        <BasicDetails/>
+        <div className="row">
+            <div className="col-lg-6">
+                    <AdvertiseforAttorneys/>
+            </div>
+            <div className="col-lg-6">
+                <AdvertiseforInvestigatorsOthers/>
+            </div>
+        </div>
+        <div className="text-center text-md-end">
+            <button className="btn-outline fill-btn">Set Preference</button>
+        </div>
+    </div>
   )
 }
 
-export default Advertisement
+export default EditAdvertisement
