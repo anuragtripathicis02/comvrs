@@ -138,6 +138,7 @@
     margin-top: 4px;
     display: flex;
     color: var(--secondary-600);
+    background-color: var(--bs-white);
 }
 
 .banner-card h4, .banner-card h5{
@@ -154,9 +155,10 @@ margin-bottom: 0px;
 .banner-image {flex: 0 0 auto; width: 84px;}
 .banner-content {
     flex: 1;
-    display: flex;
+    display: grid;
     gap: 20px;
     justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .banner-status {
@@ -170,6 +172,89 @@ margin-bottom: 0px;
     padding: 0px 10px;
 }
 
+.banner-card .dropdown-toggle {
+    padding: 3px 10px;
+}
+
+.card-basic-detail img{ width: 100%; border-radius: 16px;}
+
+.card-basic-detail .upload-box {
+  width: 100%;
+  height: 200px;
+  border: 2px dashed var(--gray-5);
+  border-radius: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.card-basic-detail .upload-box:hover {
+  border-color: #cfcfcf;
+}
+
+.card-basic-detail  .upload-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-basic-detail .upload-content .icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #bdbdbd;
+}
+
+.card-basic-detail .upload-content h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3B3A48;
+
+}
+
+.card-basic-detail .upload-content p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #3B3A48;
+}
+
+.card-basic-detail  .preview-image {
+    width: auto !important;
+    height: auto !important;
+    border-radius: inherit !important;
+}
+
+.card-basic-detail  .remove-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-basic-detail  .remove-btn:hover {
+  background: #ff4d4f;
+  color: #fff;
+}
+
+.card-basic-detail  .error {
+  margin-top: 10px;
+  color: #ff4d4f;
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 991px){
 .profileInfo { margin-bottom: 30px;}
 .banner-card { flex-direction: column;}
@@ -178,7 +263,8 @@ margin-bottom: 0px;
 @media only screen and (max-width: 767px){
 .profileStats {flex-direction: column;}
 .banner-content {
-    flex-direction: column;
+    gap: 15px;
+    grid-template-columns: 1fr;
 }
 
 .banner-action {justify-content: start;}

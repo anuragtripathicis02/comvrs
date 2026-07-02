@@ -344,17 +344,29 @@ input:-webkit-autofill {
     position: absolute;
     right: 0;
     background: url(../images/calendar.svg) !important;
-    width: 20px !important;
-    height: 20px !important;
+    width: 23px !important;
+    height: 23px !important;
     padding: 0;
     background-repeat: no-repeat !important;
 }
+
 
 
 .calendar-box input:focus+.rs-input-group-addon {
     background: url(../images/calendarFocus.svg) !important;
     background-repeat: no-repeat !important;
 }
+
+.calendar-box.time-bg .rs-input-group-addon {
+    background: url(../images/clock-bg.svg) !important;
+    background-repeat: no-repeat !important;
+}
+
+.calendar-box.time-bg input:focus+.rs-input-group-addon {
+    background: url(../images/clock-bg.svg) !important;
+    background-repeat: no-repeat !important;
+}
+
 
 
 .calendar-box .rs-picker-input-group {
